@@ -10,6 +10,8 @@
 
     <style>
         /* mis estilos */
+    
+        
     </style>
 
 </head>
@@ -21,7 +23,7 @@
                 <h2>Hide - Show - Toggle</h2>
                 <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio recusandae nam. Repellat, eos provident.</p>
                 <button id="btnHide" class="btn btn-primary">Hide</button>
-                <button id="btnShow" class="btn btn-primary">Show</button>
+                <button id="btnShow" class="btn btn-danger">Show</button>
                 <button id="btnToggle" class="btn btn-primary">Toggle</button>
             </div>
 
@@ -29,15 +31,15 @@
                 <h2>Slide Up - Show - Toggle</h2>
                 <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio recusandae nam. Repellat, eos provident.</p>
                 <button id="btnSlideUp" class="btn btn-primary">Slide Up</button>
-                <button id="btnShow2" class="btn btn-primary">Show</button>
+                <button id="btnShow2" class="btn btn-danger">Show</button>
                 <button id="btnToggle2" class="btn btn-primary">Toggle</button>
             </div>
 
             <div class="col">
                 <h2>Fade In - Fade Out - Toggle</h2>
                 <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio recusandae nam. Repellat, eos provident.</p>
+                <button id="btnFadeOut" class="btn btn-danger">Fade Out</button>
                 <button id="btnFadeIn" class="btn btn-primary">Fade In</button>
-                <button id="btnFadeOut" class="btn btn-primary">fade Out</button>
                 <button id="btnToggle3" class="btn btn-primary">Toggle</button>
             </div>
 
@@ -82,7 +84,7 @@
         });
 
         $('#btnToggle2').click(function(){
-            $('#p2').toggle();
+            $('#p2').slideToggle();
         });
 
         //tercera columna
@@ -96,7 +98,7 @@
         });
 
         $('#btnToggle3').click(function(){
-            $('#p3').toggle();
+            $('#p3').fadeToggle();
         });
 
     </script>
