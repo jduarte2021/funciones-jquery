@@ -1,46 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLANTILLA DE BOOTSTRAP CON JQUERY</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <style>
         /* mis estilos */
-    
-        
+        .colorFondo {
+            background-color: rgb(182, 182, 182);
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        .foto{
+            width: 100;
+            height: 90;
+        }
     </style>
 
 </head>
+
 <body>
+
     <h1 style="text-align: center;">JQuery Ejercicios</h1>
-    <div class="container mt-4">
+    <div class="container mt-4 colorFondo">
         <div class="row">
             <div class="col">
                 <h2>Hide - Show - Toggle</h2>
-                <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio recusandae nam. Repellat, eos provident.</p>
-                <button id="btnHide" class="btn btn-primary">Hide</button>
-                <button id="btnShow" class="btn btn-danger">Show</button>
-                <button id="btnToggle" class="btn btn-primary">Toggle</button>
+                <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia
+                    eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio
+                    recusandae nam. Repellat, eos provident.</p>
+                <div class="container centro">
+                    <button id="btnHide" class="btn btn-primary">Hide</button>
+                    <button id="btnShow" class="btn btn-danger">Show</button>
+                    <button id="btnToggle" class="btn btn-primary">Toggle</button>
+                </div>
             </div>
 
             <div class="col">
                 <h2>Slide Up - Show - Toggle</h2>
-                <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio recusandae nam. Repellat, eos provident.</p>
-                <button id="btnSlideUp" class="btn btn-primary">Slide Up</button>
-                <button id="btnShow2" class="btn btn-danger">Show</button>
-                <button id="btnToggle2" class="btn btn-primary">Toggle</button>
+                <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia
+                    eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio
+                    recusandae nam. Repellat, eos provident.</p>
+                <div class="container centro">
+                    <button id="btnSlideUp" class="btn btn-primary">Slide Up</button>
+                    <button id="btnShow2" class="btn btn-danger">Show</button>
+                    <button id="btnToggle2" class="btn btn-primary">Toggle</button>
+                </div>
             </div>
 
             <div class="col">
                 <h2>Fade In - Fade Out - Toggle</h2>
-                <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio recusandae nam. Repellat, eos provident.</p>
-                <button id="btnFadeOut" class="btn btn-danger">Fade Out</button>
-                <button id="btnFadeIn" class="btn btn-primary">Fade In</button>
-                <button id="btnToggle3" class="btn btn-primary">Toggle</button>
+                <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolore obcaecati quas quia
+                    eveniet quo nihil reprehenderit possimus quos veniam sed corrupti, culpa consectetur distinctio
+                    recusandae nam. Repellat, eos provident.</p>
+                <div class="container centro">
+                    <button id="btnFadeOut" class="btn btn-danger">Fade Out</button>
+                    <button id="btnFadeIn" class="btn btn-primary">Fade In</button>
+                    <button id="btnToggle3" class="btn btn-primary">Toggle</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row centro">
+            <div class="col">
+                <h2>Agregar Clase</h2>
+                <button id="btnAddClass" class=" btn btn-primary btn-lg">Add Class</button><br>
+                <p id="modificaClase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, consectetur.
+                    Debitis error veniam placeat, repudiandae dignissimos numquam fuga deserunt vel ipsa, iure, quidem
+                    quo perspiciatis at earum vero magnam eveniet?</p>
+            </div>
+
+            <div class="col">
+                <h2>Before</h2>
+                <button id="btnBefore" class=" btn btn-primary btn-lg">Before</button><br>
+                <p id="antesBefore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nesciunt repellat, ipsum
+                    sed numquam amet officiis, odit consectetur sit nulla ad eveniet totam distinctio optio dolor fugit
+                    tempora! Exercitationem, neque.</p>
+            </div>
+
+            <div class="col">
+                <h2>After</h2>
+                <button id="btnAfter" class="btn btn-primary btn-lg">After</button><br>
+                <p id="despuesAfter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, blanditiis laborum
+                    esse error animi ipsum eos eum unde enim illo ducimus soluta totam ullam illum! Sequi magni aliquid
+                    modi assumenda.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row centro">
+            <div class="col">
+                <h2>Agregar con Append</h2>
+                <button id="btnAppend" class="btn btn-danger btn-lg">Presiona y veras</button>
+                <p id="adjuntarAppend">Este TEST es: </p>
+            </div>
+
+            <div class="col">
+                <h2>modificar HTML</h2>
+                <button id="btnhtml" class="btn btn-primary btn-lg">Presiona y veras</button>
+                <p id="html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam in minima distinctio assumenda corrupti pariatur accusamus maxime nisi, quo tempore natus cum, voluptates deleniti debitis deserunt suscipit laboriosam voluptatibus ducimus.</p>
+            </div>
+
+            <div class="col">
+                <h2>Attr</h2>
+                <button id="btnattr" class="btn btn-danger btn-lg">Presiona y veras</button>
+                <img src="img/super88.jpg" class="foto" alt="Autazo">
+            </div>
+
+            <div class="col">
+                <h2>Val</h2>
+                <button id="btnval" class="btn btn-primary btn-lg">Presiona y veras</button>
+                <p id="val">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam consequatur at quasi expedita eos iure quaerat aperiam facilis eius dolores. Libero eligendi dolorum architecto ad minus esse nesciunt totam pariatur.</p>
             </div>
 
         </div>
@@ -52,8 +135,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -61,46 +144,103 @@
 
     <script>
         // TU CODIGO:
-        $('#btnHide').click(function(){
+        //EXTRA
+
+
+
+
+        //PRIMERA COLUMNA
+
+        $('#btnHide').click(function () {
             $('#p1').hide();
         });
 
-        $('#btnShow').click(function(){
+        $('#btnShow').click(function () {
             $('#p1').show();
         });
 
-        $('#btnToggle').click(function(){
+        $('#btnToggle').click(function () {
             $('#p1').toggle();
         });
 
         //Segunda columna
 
-        $('#btnSlideUp').click(function(){
+        $('#btnSlideUp').click(function () {
             $('#p2').slideUp();
         });
 
-        $('#btnShow2').click(function(){
+        $('#btnShow2').click(function () {
             $('#p2').show();
         });
 
-        $('#btnToggle2').click(function(){
+        $('#btnToggle2').click(function () {
             $('#p2').slideToggle();
         });
 
         //tercera columna
 
-        $('#btnFadeIn').click(function(){
+        $('#btnFadeIn').click(function () {
             $('#p3').fadeIn();
         });
 
-        $('#btnFadeOut').click(function(){
+        $('#btnFadeOut').click(function () {
             $('#p3').fadeOut();
         });
 
-        $('#btnToggle3').click(function(){
+        $('#btnToggle3').click(function () {
             $('#p3').fadeToggle();
         });
 
+        //DESDE AQUI COMIENZA SEGUNDA FILA
+
+        //PRIMERA COLUMNA IZQUIERDA
+
+        $('#btnAddClass').click(function () {
+            $('#modificaClase').addClass('colorFondo');
+        });
+
+        //SEGUNDA COLUMNA
+
+        $('#btnBefore').click(function () {
+            $('#antesBefore').before("<b>Agrega en la parte Superior =D</b>");
+        });
+
+
+        //TERCERA COLUMNA
+
+        $('#btnAfter').click(function () {
+            $('#despuesAfter').after("<b>Modifica en la parte inferior =D</b>");
+        });
+
+        //DESDE AQUI COMIENZA TERCERA FILA
+        //PRIMERA COLUMNA - APPEND
+
+        $('#btnAppend').click(function () {
+            $('#adjuntarAppend').append("<p>Exitoso</p>");
+        });
+
+        //SEGUNDA COLUMNA - HTML
+
+        $('#btnhtml').click(function () {
+            $('html').html("<p>Modificando HTML</p>");
+        });
+
+        //TERCERA COLUMNA - ATTR
+
+        $('#btnattr').click(function () {
+            $("img").attr("src","hola");
+        });
+
+
+        //CUARTA COLUMNA - VAL
+
+        $('#btnval').click(function () {
+            $('#val').val("color","black");
+        });
+
+    
+
     </script>
 </body>
+
 </html>
